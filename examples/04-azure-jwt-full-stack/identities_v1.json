@@ -1,0 +1,26 @@
+[
+    {
+        "id": "llamaxing-user",
+        "auth_key": "e4139c7e-7a25-405a-b199-deae323edcaa",
+        "name": "Test User",
+        "info": {
+            "type": "User"
+        },
+        "observability": {
+            "langfuse_public_key": "pk-lf-d17741c8-cf70-49eb-93cd-b3adb78be86b",
+            "langfuse_secret_key": "sk-lf-3195377a-f423-4825-bcb5-bdc1f915bd55"
+        }        
+    },
+    {
+        "id": "llamaxing-app",
+        "auth_key": "524de49a-85c7-4887-b58f-e14a9fce1139",
+        "name": "Test App",
+        "info": {
+            "type": "App"
+        },
+        "observability": {
+            "langfuse_public_key": "pk-lf-d17741c8-cf70-49eb-93cd-b3adb78be86b",
+            "langfuse_secret_key": "sk-lf-3195377a-f423-4825-bcb5-bdc1f915bd55"
+        }        
+    }
+]

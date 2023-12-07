@@ -1,0 +1,107 @@
+[
+    {
+        "id": "text-embedding-ada-002",
+        "aliases": [],
+        "capabilities": ["embeddings"],
+        "instances": [
+            {
+                "id": "text-embedding-ada-002-azure-001",
+                "provider": "azure",
+                "azure_endpoint": "${AZURE_ENDPOINT}",
+                "azure_deployment": "text-embedding-ada-002",
+                "azure_api_key": "${AZURE_API_KEY}",
+                "azure_api_version": "2023-12-01-preview"        
+            }
+        ]
+    },
+    {
+        "id": "gpt-3.5-turbo",
+        "aliases": ["gpt-3.5-turbo-1106"],
+        "capabilities": ["chat_completions"],
+        "instances": [
+            {
+                "id": "gpt-35-turbo-azure-001",
+                "provider": "azure",
+                "azure_endpoint": "${AZURE_ENDPOINT}",
+                "azure_deployment": "gpt-35-turbo",
+                "azure_api_key": "${AZURE_API_KEY}",
+                "azure_api_version": "2023-12-01-preview"        
+            }
+        ]
+    },
+    {
+        "id": "gpt-4",
+        "aliases": ["gpt-4-0613"],
+        "capabilities": ["chat_completions"],
+        "instances": [
+            {
+                "id": "gpt-4-azure-001",
+                "provider": "azure",
+                "azure_endpoint": "${AZURE_ENDPOINT}",
+                "azure_deployment": "gpt-4",
+                "azure_api_key": "${AZURE_API_KEY}",
+                "azure_api_version": "2023-12-01-preview"        
+            }
+        ]
+    },
+    {
+        "id": "gpt-4-1106-preview",
+        "aliases": [],
+        "capabilities": ["chat_completions"],
+        "instances": [
+            {
+                "id": "gpt-4-1106-preview-azure-001",
+                "provider": "azure",
+                "azure_endpoint": "${AZURE_ENDPOINT}",
+                "azure_deployment": "gpt-4-1106-preview",
+                "azure_api_key": "${AZURE_API_KEY}",
+                "azure_api_version": "2023-12-01-preview"        
+            }
+        ]
+    },
+    {
+        "id": "gpt-4-32k",
+        "aliases": [],
+        "capabilities": ["chat_completions"],
+        "instances": [
+            {
+                "id": "gpt-4-32k-azure-001",
+                "provider": "azure",
+                "azure_endpoint": "${AZURE_ENDPOINT}",
+                "azure_deployment": "gpt-4-32k",
+                "azure_api_key": "${AZURE_API_KEY}",
+                "azure_api_version": "2023-12-01-preview"        
+            }
+        ]
+    },
+    {
+        "id": "gpt-4-vision-preview",
+        "aliases": [],
+        "capabilities": ["chat_completions"],
+        "instances": [
+            {
+                "id": "gpt-4-vision-preview-azure-001",
+                "provider": "azure",
+                "azure_endpoint": "${AZURE_ENDPOINT}",
+                "azure_deployment": "gpt-4-vision-preview",
+                "azure_api_key": "${AZURE_API_KEY}",
+                "azure_api_version": "2023-12-01-preview"        
+            }
+        ]
+    },
+    {
+        "id": "dall-e-3",
+        "aliases": [],
+        "capabilities": ["images_generations"],
+        "instances": [
+            {
+                "id": "dall-e-3-azure-001",
+                "provider": "azure",
+                "azure_endpoint": "${AZURE_ENDPOINT}",
+                "azure_deployment": "dall-e-3",
+                "azure_api_key": "${AZURE_API_KEY}",
+                "azure_api_version": "2023-12-01-preview"        
+            }
+        ]
+    }
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "id": "llamaxing-user",
+        "auth_key": "<user object id>",
+        "name": "Test User",
+        "info": {
+            "type": "User"
+        }
+    }
+]

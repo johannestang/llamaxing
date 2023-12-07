@@ -1,0 +1,93 @@
+[
+    {
+        "id": "text-embedding-ada-002",
+        "aliases": [],
+        "capabilities": ["embeddings"],
+        "instances": [
+            {
+                "id": "text-embedding-ada-002-openai-001",
+                "provider": "openai",
+                "openai_organization": null,
+                "openai_api_key": "${OPENAI_API_KEY}"
+            }
+        ]
+    },
+    {
+        "id": "gpt-3.5-turbo",
+        "aliases": ["gpt-3.5-turbo-1106"],
+        "capabilities": ["chat_completions"],
+        "instances": [
+            {
+                "id": "gpt-35-turbo-openai-001",
+                "provider": "openai",
+                "openai_organization": null,
+                "openai_api_key": "${OPENAI_API_KEY}"       
+            }
+        ]
+    },
+    {
+        "id": "gpt-4",
+        "aliases": ["gpt-4-0613"],
+        "capabilities": ["chat_completions"],
+        "instances": [
+            {
+                "id": "gpt-4-openai-001",
+                "provider": "openai",
+                "openai_organization": null,
+                "openai_api_key": "${OPENAI_API_KEY}"      
+            }
+        ]
+    },
+    {
+        "id": "gpt-4-1106-preview",
+        "aliases": [],
+        "capabilities": ["chat_completions"],
+        "instances": [
+            {
+                "id": "gpt-4-1106-preview-openai-001",
+                "provider": "openai",
+                "openai_organization": null,
+                "openai_api_key": "${OPENAI_API_KEY}"       
+            }
+        ]
+    },
+    {
+        "id": "gpt-4-32k",
+        "aliases": [],
+        "capabilities": ["chat_completions"],
+        "instances": [
+            {
+                "id": "gpt-4-32k-openai-001",
+                "provider": "openai",
+                "openai_organization": null,
+                "openai_api_key": "${OPENAI_API_KEY}"      
+            }
+        ]
+    },
+    {
+        "id": "gpt-4-vision-preview",
+        "aliases": [],
+        "capabilities": ["chat_completions"],
+        "instances": [
+            {
+                "id": "gpt-4-vision-preview-openai-001",
+                "provider": "openai",
+                "openai_organization": null,
+                "openai_api_key": "${OPENAI_API_KEY}"     
+            }
+        ]
+    },
+    {
+        "id": "dall-e-3",
+        "aliases": [],
+        "capabilities": ["images_generations"],
+        "instances": [
+            {
+                "id": "dall-e-3-openai-001",
+                "provider": "openai",
+                "openai_organization": null,
+                "openai_api_key": "${OPENAI_API_KEY}"      
+            }
+        ]
+    }
+]

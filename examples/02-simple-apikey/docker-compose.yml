@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+
+  llamaxing:
+    image: quay.io/johannestang/llamaxing:latest
+    restart: always
+    ports:
+     - "8000:8000"
+    environment:
+      - AUTH_METHOD=apikey
+      - IDENTITY_STORE=json
+      - DEBUG_LEVEL=3
+    env_file:
+      - .env
+    volumes:
+      - ${PWD}/../models-$PROVIDER.json:/app/llamaxing/models.json
+      - ${PWD}/identities.json:/app/llamaxing/identities.json

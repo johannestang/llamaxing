@@ -1,0 +1,26 @@
+[
+    {
+        "id": "llamaxing-user",
+        "auth_key": "<user object id>",
+        "name": "Test User",
+        "info": {
+            "type": "User"
+        },
+        "observability": {
+            "langfuse_public_key": "<langfuse public key>",
+            "langfuse_secret_key": "<langfuse secret key>"
+        }        
+    },
+    {
+        "id": "llamaxing-app",
+        "auth_key": "<enterprise app object id>",
+        "name": "Test App",
+        "info": {
+            "type": "App"
+        },
+        "observability": {
+            "langfuse_public_key": "<langfuse public key>",
+            "langfuse_secret_key": "<langfuse secret key>"
+        }        
+    }
+]
