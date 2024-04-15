@@ -13,12 +13,38 @@
         ]
     },
     {
-        "id": "gpt-3.5-turbo",
-        "aliases": ["gpt-3.5-turbo-1106"],
+        "id": "text-embedding-3-large",
+        "aliases": [],
+        "capabilities": ["embeddings"],
+        "instances": [
+            {
+                "id": "text-embedding-3-large-openai-001",
+                "provider": "openai",
+                "openai_organization": null,
+                "openai_api_key": "${OPENAI_API_KEY}"
+            }
+        ]
+    },
+    {
+        "id": "text-embedding-3-small",
+        "aliases": [],
+        "capabilities": ["embeddings"],
+        "instances": [
+            {
+                "id": "text-embedding-3-small-openai-001",
+                "provider": "openai",
+                "openai_organization": null,
+                "openai_api_key": "${OPENAI_API_KEY}"
+            }
+        ]
+    },    
+    {
+        "id": "gpt-3.5-turbo-0125",
+        "aliases": ["gpt-3.5-turbo"],
         "capabilities": ["chat_completions"],
         "instances": [
             {
-                "id": "gpt-35-turbo-openai-001",
+                "id": "gpt-35-turbo-0125-openai-001",
                 "provider": "openai",
                 "openai_organization": null,
                 "openai_api_key": "${OPENAI_API_KEY}"       
@@ -26,12 +52,38 @@
         ]
     },
     {
-        "id": "gpt-4",
-        "aliases": ["gpt-4-0613"],
+        "id": "gpt-3.5-turbo-1106",
+        "aliases": [],
         "capabilities": ["chat_completions"],
         "instances": [
             {
-                "id": "gpt-4-openai-001",
+                "id": "gpt-35-turbo-1106-openai-001",
+                "provider": "openai",
+                "openai_organization": null,
+                "openai_api_key": "${OPENAI_API_KEY}"       
+            }
+        ]
+    },
+    {
+        "id": "gpt-4-turbo-2024-04-09",
+        "aliases": ["gpt-4-turbo"],
+        "capabilities": ["chat_completions"],
+        "instances": [
+            {
+                "id": "gpt-4-turbo-2024-04-09-openai-001",
+                "provider": "openai",
+                "openai_organization": null,
+                "openai_api_key": "${OPENAI_API_KEY}"      
+            }
+        ]
+    },
+    {
+        "id": "gpt-4-0613",
+        "aliases": ["gpt-4"],
+        "capabilities": ["chat_completions"],
+        "instances": [
+            {
+                "id": "gpt-4-0613-openai-001",
                 "provider": "openai",
                 "openai_organization": null,
                 "openai_api_key": "${OPENAI_API_KEY}"      
@@ -52,12 +104,25 @@
         ]
     },
     {
-        "id": "gpt-4-32k",
-        "aliases": [],
+        "id": "gpt-4-0125-preview",
+        "aliases": ["gpt-4-turbo-preview"],
         "capabilities": ["chat_completions"],
         "instances": [
             {
-                "id": "gpt-4-32k-openai-001",
+                "id": "gpt-4-0125-preview-openai-001",
+                "provider": "openai",
+                "openai_organization": null,
+                "openai_api_key": "${OPENAI_API_KEY}"       
+            }
+        ]
+    },
+    {
+        "id": "gpt-4-32k-0613",
+        "aliases": ["gpt-4-32k"],
+        "capabilities": ["chat_completions"],
+        "instances": [
+            {
+                "id": "gpt-4-32k-0613-openai-001",
                 "provider": "openai",
                 "openai_organization": null,
                 "openai_api_key": "${OPENAI_API_KEY}"      
@@ -65,12 +130,12 @@
         ]
     },
     {
-        "id": "gpt-4-vision-preview",
-        "aliases": [],
+        "id": "gpt-4-1106-vision-preview",
+        "aliases": ["gpt-4-vision-preview"],
         "capabilities": ["chat_completions"],
         "instances": [
             {
-                "id": "gpt-4-vision-preview-openai-001",
+                "id": "gpt-4-1106-vision-preview-openai-001",
                 "provider": "openai",
                 "openai_organization": null,
                 "openai_api_key": "${OPENAI_API_KEY}"     
