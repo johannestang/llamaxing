@@ -91,6 +91,19 @@
         ]
     },
     {
+        "id": "gpt-4o-2024-05-13",
+        "aliases": ["gpt-4o"],
+        "capabilities": ["chat_completions"],
+        "instances": [
+            {
+                "id": "gpt-4o-2024-05-13-openai-001",
+                "provider": "openai",
+                "openai_organization": null,
+                "openai_api_key": "${OPENAI_API_KEY}"       
+            }
+        ]
+    },
+    {
         "id": "gpt-4-1106-preview",
         "aliases": [],
         "capabilities": ["chat_completions"],

@@ -60,6 +60,21 @@
         ]
     },
     {
+        "id": "gpt-4-turbo-2024-04-09",
+        "aliases": ["gpt-4-turbo"],
+        "capabilities": ["chat_completions"],
+        "instances": [
+            {
+                "id": "gpt-4-turbo-2024-04-09-azure-001",
+                "provider": "azure",
+                "azure_endpoint": "${AZURE_ENDPOINT}",
+                "azure_deployment": "gpt-4-turbo",
+                "azure_api_key": "${AZURE_API_KEY}",
+                "azure_api_version": "2024-02-01"        
+            }
+        ]
+    },
+    {
         "id": "gpt-4-0613",
         "aliases": ["gpt-4"],
         "capabilities": ["chat_completions"],
@@ -69,6 +84,21 @@
                 "provider": "azure",
                 "azure_endpoint": "${AZURE_ENDPOINT}",
                 "azure_deployment": "gpt-4",
+                "azure_api_key": "${AZURE_API_KEY}",
+                "azure_api_version": "2024-02-01"        
+            }
+        ]
+    },
+    {
+        "id": "gpt-4o-2024-05-13",
+        "aliases": ["gpt-4o"],
+        "capabilities": ["chat_completions"],
+        "instances": [
+            {
+                "id": "gpt-4o-2024-05-13-azure-001",
+                "provider": "azure",
+                "azure_endpoint": "${AZURE_ENDPOINT}",
+                "azure_deployment": "gpt-4o",
                 "azure_api_key": "${AZURE_API_KEY}",
                 "azure_api_version": "2024-02-01"        
             }
