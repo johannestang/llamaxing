@@ -5,6 +5,7 @@ from functools import partial
 
 import anyio
 from llm.utils.openai import merge_response_chunks
+from logging_utils import log_exception
 from starlette.background import BackgroundTask
 from starlette.concurrency import iterate_in_threadpool
 from starlette.responses import Response
@@ -99,10 +100,16 @@ class LoggingStreamingResponse(Response):
             or self.observability_call is not None
             or self.log_level > 0
         ):
-            m = merge_response_chunks(
-                self.response_chunks, object_type=self.object_type
-            )
-            if "usage" in m:
+            try:
+                m = merge_response_chunks(
+                    self.response_chunks, object_type=self.object_type
+                )
+            except Exception:
+                self.logger.warning("Failed to merge response chunks")
+                log_exception()
+                return
+
+            if "usage" in m and isinstance(self.prompt_tokens, int):
                 m["usage"]["prompt_tokens"] = self.prompt_tokens
                 m["usage"]["total_tokens"] = (
                     m["usage"]["completion_tokens"] + self.prompt_tokens
@@ -110,10 +117,18 @@ class LoggingStreamingResponse(Response):
             if self.logger:
                 self.logger.debug(f"Stream response: {m}")
             if self.logging_call:
-                await self.logging_call(response=m)
+                try:
+                    await self.logging_call(response=m)
+                except Exception:
+                    self.logger.warning("Failed to log response")
+                    log_exception()
             if self.observability_call:
-                await self.observability_call(
-                    response=m,
-                    completion_start_time=self.completion_start_time,
-                    end_time=self.request_end_time,
-                )
+                try:
+                    await self.observability_call(
+                        response=m,
+                        completion_start_time=self.completion_start_time,
+                        end_time=self.request_end_time,
+                    )
+                except Exception:
+                    self.logger.warning("Failed to make observability call")
+                    log_exception()
