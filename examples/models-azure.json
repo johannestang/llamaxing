@@ -10,7 +10,7 @@
                 "azure_endpoint": "${AZURE_ENDPOINT}",
                 "azure_deployment": "text-embedding-3-large",
                 "azure_api_key": "${AZURE_API_KEY}",
-                "azure_api_version": "2024-02-01"        
+                "azure_api_version": "2024-06-01"        
             }
         ]
     },
@@ -25,7 +25,7 @@
                 "azure_endpoint": "${AZURE_ENDPOINT}",
                 "azure_deployment": "text-embedding-3-small",
                 "azure_api_key": "${AZURE_API_KEY}",
-                "azure_api_version": "2024-02-01"        
+                "azure_api_version": "2024-06-01"        
             }
         ]
     },
@@ -40,7 +40,7 @@
                 "azure_endpoint": "${AZURE_ENDPOINT}",
                 "azure_deployment": "text-embedding-ada-002",
                 "azure_api_key": "${AZURE_API_KEY}",
-                "azure_api_version": "2024-02-01"        
+                "azure_api_version": "2024-06-01"        
             }
         ]
     },
@@ -55,7 +55,7 @@
                 "azure_endpoint": "${AZURE_ENDPOINT}",
                 "azure_deployment": "gpt-35-turbo",
                 "azure_api_key": "${AZURE_API_KEY}",
-                "azure_api_version": "2024-02-01"        
+                "azure_api_version": "2024-06-01"        
             }
         ]
     },
@@ -70,7 +70,7 @@
                 "azure_endpoint": "${AZURE_ENDPOINT}",
                 "azure_deployment": "gpt-4-turbo",
                 "azure_api_key": "${AZURE_API_KEY}",
-                "azure_api_version": "2024-02-01"        
+                "azure_api_version": "2024-06-01"        
             }
         ]
     },
@@ -85,7 +85,7 @@
                 "azure_endpoint": "${AZURE_ENDPOINT}",
                 "azure_deployment": "gpt-4",
                 "azure_api_key": "${AZURE_API_KEY}",
-                "azure_api_version": "2024-02-01"        
+                "azure_api_version": "2024-06-01"        
             }
         ]
     },
@@ -100,10 +100,25 @@
                 "azure_endpoint": "${AZURE_ENDPOINT}",
                 "azure_deployment": "gpt-4o",
                 "azure_api_key": "${AZURE_API_KEY}",
-                "azure_api_version": "2024-02-01"        
+                "azure_api_version": "2024-06-01"        
             }
         ]
     },
+    {
+        "id": "gpt-4o-mini-2024-07-18",
+        "aliases": ["gpt-4o-mini"],
+        "capabilities": ["chat_completions"],
+        "instances": [
+            {
+                "id": "gpt-4o-mini-2024-07-18-azure-001",
+                "provider": "azure",
+                "azure_endpoint": "${AZURE_ENDPOINT}",
+                "azure_deployment": "gpt-4o-mini",
+                "azure_api_key": "${AZURE_API_KEY}",
+                "azure_api_version": "2024-06-01"        
+            }
+        ]
+    },    
     {
         "id": "gpt-4-1106-preview",
         "aliases": [],
@@ -115,7 +130,7 @@
                 "azure_endpoint": "${AZURE_ENDPOINT}",
                 "azure_deployment": "gpt-4-1106-preview",
                 "azure_api_key": "${AZURE_API_KEY}",
-                "azure_api_version": "2024-02-01"        
+                "azure_api_version": "2024-06-01"        
             }
         ]
     },
@@ -130,7 +145,7 @@
                 "azure_endpoint": "${AZURE_ENDPOINT}",
                 "azure_deployment": "gpt-4-0125-preview",
                 "azure_api_key": "${AZURE_API_KEY}",
-                "azure_api_version": "2024-02-01"        
+                "azure_api_version": "2024-06-01"        
             }
         ]
     },
@@ -145,7 +160,7 @@
                 "azure_endpoint": "${AZURE_ENDPOINT}",
                 "azure_deployment": "gpt-4-32k",
                 "azure_api_key": "${AZURE_API_KEY}",
-                "azure_api_version": "2024-02-01"        
+                "azure_api_version": "2024-06-01"        
             }
         ]
     },
@@ -160,7 +175,7 @@
                 "azure_endpoint": "${AZURE_ENDPOINT}",
                 "azure_deployment": "gpt-4-vision-preview",
                 "azure_api_key": "${AZURE_API_KEY}",
-                "azure_api_version": "2024-02-01"        
+                "azure_api_version": "2024-06-01"        
             }
         ]
     },
@@ -175,7 +190,7 @@
                 "azure_endpoint": "${AZURE_ENDPOINT}",
                 "azure_deployment": "dall-e-3",
                 "azure_api_key": "${AZURE_API_KEY}",
-                "azure_api_version": "2024-02-01"        
+                "azure_api_version": "2024-06-01"        
             }
         ]
     }
